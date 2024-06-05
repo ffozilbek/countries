@@ -4,12 +4,247 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Countries</title>
 </head>
 
 <body>
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="navbar">
+                    <a class="header-text-logo" href="index.html">Where in the world?</a>
+                    <a class="change-mode" href="#">
+                        <span class="moon-icon">
+                            <svg width="20" height="20" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.5532 11.815C8.66857 11.815 5.51929 8.92783 5.51929 5.36821C5.51929 4.0253 5.96679 2.78158 6.73143 1.75C3.69036 2.69515 1.5 5.33122 1.5 8.43807C1.5 12.3385 4.94929 15.5 9.20357 15.5C12.5929 15.5 15.4696 13.4932 16.5 10.7045C15.375 11.4048 14.0161 11.815 12.5532 11.815Z"
+                                    fill="white" stroke="currentColor" stroke-width="1.25" />
+                            </svg>
+                            Dark mode
+                        </span>
+                    </a>
+
+                    <a class="change-mode-reverse" href="#">
+                        <span class="moon-icon">
+                            <svg width="20" height="20" viewBox="0 0 18 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.5532 11.815C8.66857 11.815 5.51929 8.92783 5.51929 5.36821C5.51929 4.0253 5.96679 2.78158 6.73143 1.75C3.69036 2.69515 1.5 5.33122 1.5 8.43807C1.5 12.3385 4.94929 15.5 9.20357 15.5C12.5929 15.5 15.4696 13.4932 16.5 10.7045C15.375 11.4048 14.0161 11.815 12.5532 11.815Z"
+                                    fill="white" stroke="currentColor" stroke-width="1.25" />
+                            </svg>
+                            Light mode
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="seach-section">
+                <input class="search-input" type="text" placeholder="Search for a country…">
+                <select class="filter" name="filtered" id="filtered">
+                    <option>Filter by region</option>
+                    <option value="africa">Africa</option>
+                    <option value="america">America</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <ul class="countries-list">
+                <li class="countries-list-item">
+                    <div class="countries-card">
+                        <img class="card-img" width="267" height="160" src="./img/flag-germany.jpg" alt="Germany Flag">
+                        <div class="countries-card-info">
+                            <h3 class="country-name">Germany</h3>
+                            <dl class="country-detail">
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Population:</dt>
+                                    <dd class="country-detail-item-value"> 81,770,900</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Region: </dt>
+                                    <dd class="country-detail-item-value">Europe</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Capital: </dt>
+                                    <dd class="country-detail-item-value">Berlin</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="countries-list-item">
+                    <div class="countries-card">
+                        <img class="card-img" width="267" height="160" src="./img/flag-usa.jpg"
+                            alt="United States of America Flag">
+                        <div class="countries-card-info">
+                            <h3 class="country-name">United States of America</h3>
+                            <dl class="country-detail">
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Population: </dt>
+                                    <dd class="country-detail-item-value">323,947,000</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Region: </dt>
+                                    <dd class="country-detail-item-value">Americas</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Capital: </dt>
+                                    <dd class="country-detail-item-value">Washington, D.C.</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="countries-list-item">
+                    <div class="countries-card">
+                        <img class="card-img" width="267" height="160" src="./img/flag-brazil.jpg" alt="Brazil Flag">
+                        <div class="countries-card-info">
+                            <h3 class="country-name">Brazil</h3>
+                            <dl class="country-detail">
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Population: </dt>
+                                    <dd class="country-detail-item-value">206,135,893</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Region: </dt>
+                                    <dd class="country-detail-item-value">Americas</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Capital: </dt>
+                                    <dd class="country-detail-item-value">Brasília</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="countries-list-item">
+                    <div class="countries-card">
+                        <img class="card-img" width="267" height="160" src="./img/flag-iceland.jpg" alt="Iceland Flag">
+                        <div class="countries-card-info">
+                            <h3 class="country-name">Iceland</h3>
+                            <dl class="country-detail">
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Population: </dt>
+                                    <dd class="country-detail-item-value">334,300</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Region: </dt>
+                                    <dd class="country-detail-item-value">Europe</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Capital: </dt>
+                                    <dd class="country-detail-item-value"> Reykjavík</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="countries-list-item">
+                    <div class="countries-card">
+                        <img class="card-img" width="267" height="160" src="./img/flag-afganistan.jpg"
+                            alt="Afganistan Flag">
+                        <div class="countries-card-info">
+                            <h3 class="country-name">Afganistan</h3>
+                            <dl class="country-detail">
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Population: </dt>
+                                    <dd class="country-detail-item-value">27,657,145</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Region: </dt>
+                                    <dd class="country-detail-item-value">Asia</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Capital: </dt>
+                                    <dd class="country-detail-item-value">Kabul</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="countries-list-item">
+                    <div class="countries-card">
+                        <img class="card-img" width="267" height="160" src="./img/flag-alandisland.jpg"
+                            alt="Åland Islands Flag">
+                        <div class="countries-card-info">
+                            <h3 class="country-name">Åland Islands</h3>
+                            <dl class="country-detail">
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Population: </dt>
+                                    <dd class="country-detail-item-value">28,875</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Region: </dt>
+                                    <dd class="country-detail-item-value">Europe</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Capital: </dt>
+                                    <dd class="country-detail-item-value">Mariehamn</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="countries-list-item">
+                    <div class="countries-card">
+                        <img class="card-img" width="267" height="160" src="./img/flag-albania.jpg" alt="Albania Flag">
+                        <div class="countries-card-info">
+                            <h3 class="country-name">Albania</h3>
+                            <dl class="country-detail">
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Population: </dt>
+                                    <dd class="country-detail-item-value">81,770,900</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Region: </dt>
+                                    <dd class="country-detail-item-value">Europe</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Capital: </dt>
+                                    <dd class="country-detail-item-value">Berlin</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <li class="countries-list-item">
+                    <div class="countries-card">
+                        <img class="card-img" width="267" height="160" src="./img/flag-algeria.jpg" alt="Algeria Flag">
+                        <div class="countries-card-info">
+                            <h3 class="country-name">Algeria</h3>
+                            <dl class="country-detail">
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Population: </dt>
+                                    <dd class="country-detail-item-value">40,400,000</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Region: </dt>
+                                    <dd class="country-detail-item-value">Africa</dd>
+                                </div>
+                                <div class="country-detail-item">
+                                    <dt class="country-detail-item-title">Capital: </dt>
+                                    <dd class="country-detail-item-value">Algiers</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
     <script src="./js/script.js"></script>
 </body>
 
